@@ -2,8 +2,8 @@
 
 **Table Of Contents:**
 
-1. Update landing page
-2. Capture emails of interested users
+1. [Update landing page](/doc/landing-page.md#update-landing-page)
+2. [Capture emails of interested users](/doc/landing-page.md#capture-emails-of-interested-users)
 3. Change Logos
 4. Update FAQ
 
