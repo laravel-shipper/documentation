@@ -4,8 +4,8 @@
 
 1. [Update landing page](/doc/landing-page.md#update-landing-page)
 2. [Capture emails of interested users](/doc/landing-page.md#capture-emails-of-interested-users)
-3. Change Logos
-4. Update FAQ
+3. [Change Logos](/doc/landing-page.md#update-landing-page)
+4. [Update FAQ](/doc/landing-page.md#change-logs)
 
 ### Update landing page
 
