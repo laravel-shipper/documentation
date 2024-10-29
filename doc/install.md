@@ -43,3 +43,5 @@ The package is required and importent in your new project. You just need to run 
 ```shell
 php artisan shipper:install
 ```
+
+During the install process you will need to answer a few questions, there one important about **seeding products**. This is up to you, if you want to customize them, maybe it's better to say No now, and run it later. Here you can find more info about [payments and products](/doc/payments-and-products.md).
