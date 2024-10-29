@@ -45,6 +45,7 @@ And you can update, or remove any logo by updating or adding a new item to the a
             'url' => 'https://metricswave.com',
             'logoDark' => 'images/metricswave_dark.png',
         ],
+
         // …
     ],
 ```
@@ -61,6 +62,20 @@ By default, all images are stored in `public/images`.
 ### 4. Update FAQ
 
 The same, all FAQ are on `config/shipper.php` under `faq_questions`.
+
+```php
+    'faq_questions' => [
+        [
+            'question' => 'My product is not ready yet, how can I use the waiting list feature?',
+            'answer' => [
+                'You can enable the waiting list feature by setting the `LSS_LANDING_RELEASED` environment variable to `false`.',
+                'This will show the waiting list form on the landing page.',
+            ],
+        ],
+
+        // …
+    ],
+```
 
 In this case each question has to properties:
 
