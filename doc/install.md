@@ -2,8 +2,8 @@
 
 **Table Of Content:**
 
-1. Create a new Laravel Project
-2. Install Laravel Shipper
+1. [Create a new Laravel Project](/doc/install.md#1-create-a-new-laravel-project)
+2. [Install Laravel Shipper](/doc/install.md#2-install-laravel-shipper)
 
 ### 1. Create a new Laravel Project
 
