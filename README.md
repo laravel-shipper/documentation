@@ -5,8 +5,8 @@
 - [Install & Quick Start Guide](/doc/install.md)
 - [Landing Page](/doc/landing-page.md)
   - [Capture users emails](/doc/landing-page.md#2-capture-emails-of-interested-users)
-  - [Change customer logos](/doc/landing-page.md#3-update-landing-page)
-  - [Update FAQ](/doc/landing-page.md#4-change-logs)
+  - [Change customer logos](/doc/landing-page.md#3-change-logos)
+  - [Update FAQ](/doc/landing-page.md#4-update-faq)
 
 ### More
 #### 🐛 Report an Issue
