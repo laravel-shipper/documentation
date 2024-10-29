@@ -3,6 +3,10 @@
 ### Table Of Contents:
 
 - [1. Install & Quick Start Guide](/doc/install.md)
+  - [One Command Install](/doc/install.md#1-one-command-install)
+  - [Create a new Laravel Project](/doc/install.md#2-create-a-new-laravel-project)
+  - [Install Laravel Shipper](/doc/install.md#3-install-laravel-shipper)
+  - [Set Up you Project](/doc/install.md#4-set-up-your-project)
 - [2. Landing Page](/doc/landing-page.md)
   - [Capture users emails](/doc/landing-page.md#2-capture-emails-of-interested-users)
   - [Change customer logos](/doc/landing-page.md#3-change-logos)
