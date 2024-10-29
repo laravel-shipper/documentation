@@ -51,7 +51,7 @@ composer config http-basic.laravelshipper.com john@doe.com your-api-token
 And lastly, just require the package using composer.
 
 ```
-composer require laravel-shipper/saas:^1.0
+composer require laravel-shipper/saas:^v0.1
 ```
 
 ### 4. Set Up your Project
