@@ -59,3 +59,12 @@ Each logo has this four properties:
 By default, all images are stored in `public/images`.
 
 ### 4. Update FAQ
+
+The same, all FAQ are on `config/shipper.php` under `faq_questions`.
+
+In this case each question has to properties:
+
+- `question`: an string, with the question it self.
+- `answer`: an array of strings. Each item in the array is a paragraph.
+
+If you want to totally remove FAQ questions from landing page, you can leave this array empty.
