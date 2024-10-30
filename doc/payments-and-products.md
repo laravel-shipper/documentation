@@ -22,7 +22,7 @@ And you also need to **create the webhook in your stripe account** so we can syn
 php artisan cashier:webhook
 ```
 
-#### ⚠️ Important: add `checkout.session.completed` event to the webhook
+#### Important: add `checkout.session.completed` event to the webhook
 
 We need this event to confirm user payments so it's important to add it manually to the webhook you just create.
 
