@@ -4,8 +4,9 @@
 
 1. [Update landing page](/doc/landing-page.md#1-update-landing-page)
 2. [Capture emails of interested users](/doc/landing-page.md#2-capture-emails-of-interested-users)
-3. [Change Logos](/doc/landing-page.md#3-update-landing-page)
-4. [Update FAQ](/doc/landing-page.md#4-change-logs)
+3. [Change Logos](/doc/landing-page.md#3-change-logos)
+4. [Update FAQ](/doc/landing-page.md#4-update-faq)
+5. [Footer Social Links](/doc/landing-page.md#5-footer-social-links)
 
 ### 1. Update landing page
 
@@ -88,3 +89,7 @@ In this case each question has to properties:
 - `answer`: an array of strings. Each item in the array is a paragraph.
 
 If you want to totally remove FAQ questions from landing page, you can leave this array empty.
+
+### 5. Footer Social Links
+
+Default link values are stored in `config/shipper.php`. You can change direcly on that file in side the `links` array or using environment variables like `SHIPPER_LINKS_INSTAGRAM`, ``SHIPPER_LINKS_TWITTER`, or `SHIPPER_LINKS_EMAIL`.
