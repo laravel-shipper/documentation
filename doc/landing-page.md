@@ -25,6 +25,11 @@ LSS_LANDING_RELEASED=false
 
 Also, you can change it in `config/shipper.php` under the `landing.released` option.
 
+Now in the landing page you will see a new form where the user can input his email.
+
+![image](https://github.com/user-attachments/assets/ed20ea60-a2f9-4b5f-9b0d-7400e3658237)
+
+
 ### 3. Change Logos
 
 All logos are in `config/shipper.php` under the `company_logos` option.
