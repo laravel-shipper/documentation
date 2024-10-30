@@ -9,6 +9,10 @@ WIP
 
 ### 2. Create Products
 
+Products are created in the `database/seeders/ProductsDatabaseSeeder.php`. You can update this file as you want, and then run it with the `php artisan shipper:refresh-products` command.
+
+You can create, update or remove any product with this command and seeder file. It's important to know that you **should not delete a product** if it has been purchased or it has active subscriptions. If you want to do this it's better to user the product `deleted_at` field and change it from `null` to the `current date`.
+
 ### 3. No free account / Force user payment or subscription
 
 By default any user can create an app an access the dasboard, but this is something you can change with a single line.
