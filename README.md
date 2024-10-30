@@ -15,6 +15,7 @@
   - [1. Set Up Payments](/doc/payments-and-products.md#1-set-up-payments)
   - [2. Create Products](/doc/payments-and-products.md#2-create-products)
   - [3. No free account / Force user payment or subscription](/doc/payments-and-products.md#3-no-free-account--force-user-payment-or-subscription)
+  - [4. Check user subscriptions or payments](/doc/payments-and-products.md#4-check-user-subscriptions-or-payments)
 
 ### More
 #### 🐛 Report an Issue
