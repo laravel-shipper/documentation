@@ -95,4 +95,66 @@ And you can also get all user subscriptions and do what you need with them:
 ```php
 // A Collection of all user subscriptions
 $subscriptions = $user->subscriptions;
-``
+```
+
+### 5. Products in Pricing page
+
+There are multiple ways to change the products that are shown on the pricing section.
+
+The **simplest option** is to change the `products_filter` array in `config/shipper.php`. You can customize a type filter, the order, whether to show or not show unavailable products, and also the limit. For the most common use cases, this is more than enough.
+
+```php
+    'products_filter' => [
+        // one-time, 'subscriptions', or null for all (default: null)
+        'type' => null,
+
+        // Show only one per product_id
+        'group-by' => 'product_id',
+
+        // Sort products by any product attribute (default: id)
+        'order-by' => 'monthly_price_cents',
+
+        // kow many unavailable products to show (default: 0)
+        'unavailable' => 1,
+
+        // How many products to show, it takes into account unavailable products (default: 3)
+        'limit' => 3,
+    ],
+```
+
+Another option is to change it directly in the `resources/views/partials/prices.blade.php` file.  
+
+At the top of this file, you will find a call to `Lss\Services\ProductsGetter::get()`. This provides a collection of products, and you can change it for a custom query, for example:
+
+```php
+    $products = Lss\Models\Product::whereIn('id', [1, 2, 3])->get();
+```
+
+Take into account that this file is used in the landing page, but also in the dashboard when forcing user to choose a product or subscription.
+
+##### Other options related with pricing
+
+Inside the `config/shipper.php` file, you will also find other options related to the pricing table, such as `highlighted_product_ids` and `show_available_units`.
+
+```php
+    'highlighted_product_ids' => [2],
+
+    'show_available_units' => true,
+```
+
+### 6. Other Options
+
+Also, in `config/shipper.php`, you can customize whether you want to allow promotion codes during checkout, trial days on subscription, and the yearly discount applied to subscriptions when the yearly period is chosen.
+
+```php
+    'payments' => [
+        // Promotions code are created in Stripe
+        'allow_promotion_codes' => env('SHIPPER_ALLOW_PROMO_CODES', true),
+
+        // Trials days only apply to subscriptions
+        'trial_days' => env('SHIPPER_TRIAL_DAYS', 7),
+
+        // Discount for yearly subcriptions only
+        'yearly_discount' => env('SHIPPER_YEARLY_DISCOUNT', 20),
+    ],
+```
