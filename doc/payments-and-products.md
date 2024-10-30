@@ -1,11 +1,34 @@
 ## Payments And Products
 
 **Table of contents:**
-```
-WIP
-```
+1. [Set Up Payments](/doc/payments-and-products.md#1-set-up-payments)
+2. [Create Products](/doc/payments-and-products.md#2-create-products)
+3. [No free account / Force user payment or subscription](/doc/payments-and-products.md#3-no-free-account--force-user-payment-or-subscription)
 
 ### 1. Set Up Payments
+
+Laravel Shipper use stripe for payments. So you will need an Stripe account before configure payments.
+
+The first thing you will need is to **add your public, and secret key in your `.env` file**.
+
+```env
+STRIPE_KEY=pk_test_…
+STRIPE_SECRET=sk_test_…
+```
+
+And you also need to **create the webhook in your stripe account** so we can sync subscription status and payments. To create this webhook just run:
+
+```bash
+php artisan cashier:webhook
+```
+
+#### ⚠️ Important: add `checkout.session.completed` event to the webhook
+
+We need this event to confirm user payments so it's important to add it manually to the webhook you just create.
+
+Go to stripe, and make sure that your webhook events maches this one.
+
+![image](https://github.com/user-attachments/assets/164d64e2-e9e0-4e7d-b89a-b84092a21fee)
 
 ### 2. Create Products
 
