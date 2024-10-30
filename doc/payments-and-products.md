@@ -57,3 +57,41 @@ Route::get('/dashboard', function () {
 This is the dasboard when the user needs a subscription or purchase and has none.
 
 ![image](https://github.com/user-attachments/assets/35db2b82-1c12-4055-8df8-3261720fc8af)
+
+### 4. Check user subscriptions or payments
+
+During the development of your app, you will need to check if the current user has an active subscrition or has purchase a product.
+
+#### Check purchases
+
+You have to method, in the `User` model, to check if it has purchase any product, or an specific product.
+
+```php
+$hasPurchasedAnyProduct = $user->productPurchased();
+
+$hasPurchasedProductId = $user->productPurchased('premium');
+```
+
+Also, you can get all the product purchased by this user and do whatever you want with them:
+
+```php
+// A Collection of all user purchases
+$purchases = $user->purchases;
+```
+
+#### Check subscriptions
+
+With subscritions you can do something similar.
+
+```php
+$hasAnySubscriptionActive = $user->subscribed();
+
+$isSubscribedToProductId = $user->subscribedToProduct('premium');
+```
+
+And you can also get all user subscriptions and do what you need with them:
+
+```php
+// A Collection of all user subscriptions
+$subscriptions = $user->subscriptions;
+``
