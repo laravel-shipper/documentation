@@ -18,6 +18,7 @@
   - [Check user subscriptions or payments](/doc/payments-and-products.md#4-check-user-subscriptions-or-payments)
   - [Products in Pricing page](/doc/payments-and-products.md#5-products-in-pricing-page)
   - [Other Options](/doc/payments-and-products.md#6-other-options)
+- [4. Legal pages](/doc/legal-pages.md)
 
 ### More
 #### 🐛 Report an Issue
