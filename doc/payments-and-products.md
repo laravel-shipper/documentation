@@ -26,3 +26,7 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified', ProductPurchased::class])->name('dashboard');
 ```
+
+This is the dasboard when the user needs a subscription or purchase and has none.
+
+![image](https://github.com/user-attachments/assets/35db2b82-1c12-4055-8df8-3261720fc8af)
