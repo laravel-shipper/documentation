@@ -16,6 +16,8 @@
   - [Create Products](/doc/payments-and-products.md#2-create-products)
   - [No free account / Force user payment or subscription](/doc/payments-and-products.md#3-no-free-account--force-user-payment-or-subscription)
   - [Check user subscriptions or payments](/doc/payments-and-products.md#4-check-user-subscriptions-or-payments)
+  - Products in Pricing page](/doc/payments-and-products.md#5-products-in-pricing-page)
+  - [Other Options](/doc/payments-and-products.md#6-other-options)
 
 ### More
 #### 🐛 Report an Issue
